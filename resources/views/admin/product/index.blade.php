@@ -7,10 +7,10 @@
 @section('css')
     <link rel="stylesheet" href="{{ asset('admins/product/index/list.css') }}">
 @endsection
-{{--@section('js')--}}
-{{--    <script src="{{ asset('vendors/sweetAlert2/sweetalert2@9.js') }}"></script>--}}
-{{--    <script type="text/javascript" src="{{ asset('admins/main.js') }}"></script>--}}
-{{--@endsection--}}
+@section('js')
+    <script src="{{ asset('vendors/sweetAlert2/sweetalert2@9.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admins/main.js') }}"></script>
+@endsection
 {{--@section('header')--}}
 {{--    @include('partials.header-product')--}}
 {{--@endsection--}}
@@ -67,7 +67,7 @@
                                             href="{{ route('product.edit', ['id' => $productItem->id]) }}"
                                            class="btn btn-default">Edit</a>
                                         <a href=""
-{{--                                           data-url="{{ route('product.delete', ['id' => $productItem->id]) }}"--}}
+                                           data-url="{{ route('product.delete', ['id' => $productItem->id]) }}"
                                            class="btn btn-danger action_delete">Delete</a>
 
                                     </td>
