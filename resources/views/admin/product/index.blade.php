@@ -64,7 +64,7 @@
                                     </td>
                                     <td>
                                         <a
-{{--                                            href="{{ route('product.edit', ['id' => $productItem->id]) }}"--}}
+                                            href="{{ route('product.edit', ['id' => $productItem->id]) }}"
                                            class="btn btn-default">Edit</a>
                                         <a href=""
 {{--                                           data-url="{{ route('product.delete', ['id' => $productItem->id]) }}"--}}

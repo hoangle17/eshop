@@ -12,6 +12,7 @@ use App\Traits\StorageImageTrait;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\DB;
+
 class AdminProductController extends Controller
 {
 
@@ -104,4 +105,8 @@ class AdminProductController extends Controller
 
     }
 
+    public function edit($id)
+    {
+        dd('edit');
+    }
 }
