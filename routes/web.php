@@ -99,14 +99,14 @@ Route::prefix('admin')->group(function () {
 
         ]);
 
-//        Route::post('/update/{id}', [
-//            'as' => 'product.update',
-//            'uses' => 'AdminProductController@update'
-//        ]);
-//        Route::get('/delete/{id}', [
-//            'as' => 'product.delete',
-//            'uses' => 'AdminProductController@delete'
-//        ]);
+        Route::post('/update/{id}', [
+            'as' => 'product.update',
+            'uses' => 'AdminProductController@update'
+        ]);
+        Route::get('/delete/{id}', [
+            'as' => 'product.delete',
+            'uses' => 'AdminProductController@delete'
+        ]);
 
     });
 });

@@ -23,12 +23,12 @@ class Product extends Model
     {
         return $this->belongsTo(Category::class, 'category_id');
     }
-//
-//
-//    public function productImages()
-//    {
-//        return $this->hasMany(ProductImage::class, 'product_id');
-//    }
+
+
+    public function productImages()
+    {
+        return $this->hasMany(ProductImage::class, 'product_id');
+    }
 //
 //    public function getProductSearch($request)
 //    {
