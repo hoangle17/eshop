@@ -2,26 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d682c1c-dc26-43cf-b126-afdb2dffd882" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Services/PermissionGateAndPolicyAccess.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/permissions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/setting/add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/setting/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/setting/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user/add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/admins/category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/admins/menu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/admins/permission.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/admins/product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/admins/role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/admins/setting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/admins/slider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/admins/user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MenuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MenuController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/menus/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/menus/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/slider/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/slider/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +122,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1kIRE0PwOTzwfz0vPlR4B0act9E" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -148,7 +140,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -179,7 +171,7 @@
       <updated>1605386005059</updated>
       <workItem from="1605386006321" duration="28372000" />
       <workItem from="1605454431925" duration="9632000" />
-      <workItem from="1605465594527" duration="14820000" />
+      <workItem from="1605465594527" duration="15751000" />
     </task>
     <servers />
   </component>
@@ -187,10 +179,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="604" y="355" key="NewPhpFileDialog" timestamp="1605455362111">
+    <state x="604" y="355" key="NewPhpFileDialog" timestamp="1605482915979">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="604" y="355" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1605455362111" />
+    <state x="604" y="355" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1605482915979" />
+    <state x="277" y="77" key="SettingsEditor" timestamp="1605482561545">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="277" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1605482561545" />
     <state width="597" height="446" key="SwitcherDM" timestamp="1605477977652">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
