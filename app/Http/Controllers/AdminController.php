@@ -13,11 +13,11 @@ class AdminController extends Controller
         }
         return view('login');
     }
-//    public function logout()
-//    {
-//        auth()->logout();
-//        return redirect()->route('admin.login');
-//    }
+    public function logout()
+    {
+        auth()->logout();
+        return redirect()->route('admin.login');
+    }
 
     public function postLoginAdmin(Request $request)
     {

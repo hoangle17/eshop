@@ -25,9 +25,11 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <a
-                            href="{{ route('product.create') }}"
-                            class="btn btn-success float-right m-2">Add</a>
+                        @can('product-add')
+                            <a
+                                href="{{ route('product.create') }}"
+                                class="btn btn-success float-right m-2">Add</a>
+                        @endcan
                     </div>
                     <div class="col-md-12">
                         <table class="table">
@@ -63,13 +65,16 @@
                                         {{ optional($productItem->category)->name }}
                                     </td>
                                     <td>
-                                        <a
-                                            href="{{ route('product.edit', ['id' => $productItem->id]) }}"
-                                           class="btn btn-default">Edit</a>
-                                        <a href=""
-                                           data-url="{{ route('product.delete', ['id' => $productItem->id]) }}"
-                                           class="btn btn-danger action_delete">Delete</a>
-
+                                        @can('product-edit')
+                                            <a
+                                                href="{{ route('product.edit', ['id' => $productItem->id]) }}"
+                                                class="btn btn-default">Edit</a>
+                                        @endcan
+                                        @can('product-delete')
+                                            <a href=""
+                                               data-url="{{ route('product.delete', ['id' => $productItem->id]) }}"
+                                               class="btn btn-danger action_delete">Delete</a>
+                                        @endcan
                                     </td>
                                 </tr>
                             @endforeach

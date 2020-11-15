@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('title')
-    <title>Slider</title>
+    <title>Trang chu</title>
 @endsection
 
 @section('css')
@@ -17,14 +17,14 @@
 @section('content')
 
     <div class="content-wrapper">
-        @include('partials.content-header', ['name' => 'Slider', 'key' => 'Add'])
+        @include('partials.content-header', ['name' => 'User', 'key' => 'List'])
 
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        @can('slider-add')
-                            <a href="{{ route('slider.create') }}" class="btn btn-success float-right m-2"> Add</a>
+                        @can('user-add')
+                            <a href="{{ route('users.create') }}" class="btn btn-success float-right m-2"> Add</a>
                         @endcan
                     </div>
                     <div class="col-md-12">
@@ -32,35 +32,30 @@
                             <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Tên slider</th>
-                                <th scope="col">Desciption</th>
-                                <th scope="col">Hình ảnh</th>
+                                <th scope="col">Tên</th>
+                                <th scope="col">email</th>
                                 <th scope="col">Action</th>
                             </tr>
                             </thead>
                             <tbody>
 
-                            @foreach($sliders as $slider)
+                            @foreach($users as $user)
 
                                 <tr>
-                                    <th scope="row">{{ $slider->id }}</th>
-                                    <td>{{ $slider->name }}</td>
-                                    <td>{{ $slider->description }}</td>
-                                    <td>
-                                        <img class="image_slider_150_100" src="{{ $slider->image_path }}" alt="">
+                                    <th scope="row">{{ $user->id }}</th>
+                                    <td>{{ $user->name }}</td>
+                                    <td>{{ $user->email }}</td>
 
-                                    </td>
                                     <td>
-                                        @can('slider-edit')
-                                            <a href="{{ route('slider.edit', ['id' => $slider->id]) }}"
+                                        @can('user-edit')
+                                            <a href="{{ route('users.edit', ['id' => $user->id]) }}"
                                                class="btn btn-default">Edit</a>
                                         @endcan
-                                        @can('slider-delete')
+                                        @can('user-delete')
                                             <a href=""
-                                               data-url="{{ route('slider.delete', ['id' => $slider->id]) }}"
+                                               data-url="{{ route('users.delete', ['id' => $user->id]) }}"
                                                class="btn btn-danger action_delete">Delete</a>
                                         @endcan
-
                                     </td>
                                 </tr>
                             @endforeach
@@ -69,7 +64,7 @@
                         </table>
                     </div>
                     <div class="col-md-12">
-                        {{ $sliders->links() }}
+                        {{ $users->links() }}
                     </div>
 
                 </div>

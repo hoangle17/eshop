@@ -2,15 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d682c1c-dc26-43cf-b126-afdb2dffd882" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Traits/DeleteModelTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/slider/add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/slider/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/slider/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/PermissionGateAndPolicyAccess.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/permissions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/setting/add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/setting/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/setting/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/user/add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/user/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/user/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MenuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MenuController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/menus/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/menus/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/slider/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/slider/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -130,6 +140,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/user" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -142,11 +153,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\shopping\app\Services" />
+      <recent name="C:\xampp\htdocs\shopping\resources\views\partials" />
+      <recent name="C:\xampp\htdocs\shopping\resources\views\admin" />
+      <recent name="C:\xampp\htdocs\shopping\resources\views\admin\setting" />
       <recent name="C:\xampp\htdocs\shopping\public\admins" />
-      <recent name="C:\xampp\htdocs\shopping\resources\views\admin\slider" />
-      <recent name="C:\xampp\htdocs\shopping\public\admins\product\index" />
-      <recent name="C:\xampp\htdocs\shopping\public" />
-      <recent name="C:\xampp\htdocs\shopping\public\adminlte\vendors\select2" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\shopping\resources\views\admin\user" />
     </key>
   </component>
   <component name="RunManager">
@@ -164,7 +178,8 @@
       <option name="presentableId" value="Default" />
       <updated>1605386005059</updated>
       <workItem from="1605386006321" duration="28372000" />
-      <workItem from="1605454431925" duration="3968000" />
+      <workItem from="1605454431925" duration="9632000" />
+      <workItem from="1605465594527" duration="14820000" />
     </task>
     <servers />
   </component>
@@ -176,17 +191,21 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="604" y="355" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1605455362111" />
-    <state x="478" y="165" width="579" height="534" key="find.popup" timestamp="1605401728807">
+    <state width="597" height="446" key="SwitcherDM" timestamp="1605477977652">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="478" y="165" width="579" height="534" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1605401728807" />
-    <state x="425" y="197" key="run.anything.popup" timestamp="1605402472232">
+    <state width="597" height="446" key="SwitcherDM/0.0.1536.864@0.0.1536.864" timestamp="1605477977652" />
+    <state x="478" y="165" width="579" height="534" key="find.popup" timestamp="1605469814134">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1605402472232" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1605455575031">
+    <state x="478" y="165" width="579" height="534" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1605469814134" />
+    <state x="425" y="197" key="run.anything.popup" timestamp="1605477262222">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1605455575031" />
+    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1605477262222" />
+    <state x="431" y="182" width="672" height="677" key="search.everywhere.popup" timestamp="1605475945970">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="182" width="672" height="677" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1605475945970" />
   </component>
 </project>

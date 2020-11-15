@@ -169,4 +169,10 @@ class AdminProductController extends Controller
     {
         return $this->deleteModelTrait($id, $this->product);
     }
+    public function search(Request $request)
+    {
+        $products = $this->product->getProductSearch($request);
+        return view('admin.product.index', compact('products'));
+
+    }
 }
