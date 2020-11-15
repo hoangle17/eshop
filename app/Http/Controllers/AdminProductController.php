@@ -9,6 +9,7 @@ use App\Product;
 use App\ProductImage;
 use App\ProductTag;
 use App\Tag;
+use App\Traits\DeleteModelTrait;
 use App\Traits\StorageImageTrait;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -17,7 +18,7 @@ use Illuminate\Support\Facades\DB;
 class AdminProductController extends Controller
 {
 
-    use StorageImageTrait;
+    use StorageImageTrait, DeleteModelTrait;
 
     private $category;
     private $product;
@@ -166,6 +167,6 @@ class AdminProductController extends Controller
 
     public function delete($id)
     {
-
+        return $this->deleteModelTrait($id, $this->product);
     }
 }

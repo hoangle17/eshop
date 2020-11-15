@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d682c1c-dc26-43cf-b126-afdb2dffd882" name="Default Changelist" comment="" />
+    <list default="true" id="7d682c1c-dc26-43cf-b126-afdb2dffd882" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Traits/DeleteModelTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/slider/add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/slider/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/slider/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -127,10 +142,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\shopping\public\admins" />
+      <recent name="C:\xampp\htdocs\shopping\resources\views\admin\slider" />
       <recent name="C:\xampp\htdocs\shopping\public\admins\product\index" />
       <recent name="C:\xampp\htdocs\shopping\public" />
       <recent name="C:\xampp\htdocs\shopping\public\adminlte\vendors\select2" />
-      <recent name="C:\xampp\htdocs\shopping\resources\views\admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -147,7 +163,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605386005059</updated>
-      <workItem from="1605386006321" duration="28183000" />
+      <workItem from="1605386006321" duration="28372000" />
+      <workItem from="1605454431925" duration="3968000" />
     </task>
     <servers />
   </component>
@@ -155,10 +172,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="604" y="355" key="NewPhpFileDialog" timestamp="1605400956867">
+    <state x="604" y="355" key="NewPhpFileDialog" timestamp="1605455362111">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="604" y="355" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1605400956867" />
+    <state x="604" y="355" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1605455362111" />
     <state x="478" y="165" width="579" height="534" key="find.popup" timestamp="1605401728807">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -167,9 +184,9 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1605402472232" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1605414869385">
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1605455575031">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1605414869385" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1605455575031" />
   </component>
 </project>
