@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d682c1c-dc26-43cf-b126-afdb2dffd882" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/routes/admins/category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/admins/menu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/admins/permission.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/admins/product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/admins/role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/admins/setting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/admins/slider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/admins/user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminProductController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +123,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/user" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eshopper" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -144,15 +135,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\shopping\resources\views\admin\user" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\shopping\app\Services" />
       <recent name="C:\xampp\htdocs\shopping\resources\views\partials" />
       <recent name="C:\xampp\htdocs\shopping\resources\views\admin" />
       <recent name="C:\xampp\htdocs\shopping\resources\views\admin\setting" />
       <recent name="C:\xampp\htdocs\shopping\public\admins" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\shopping\resources\views\admin\user" />
     </key>
   </component>
   <component name="RunManager">
@@ -171,7 +162,8 @@
       <updated>1605386005059</updated>
       <workItem from="1605386006321" duration="28372000" />
       <workItem from="1605454431925" duration="9632000" />
-      <workItem from="1605465594527" duration="15751000" />
+      <workItem from="1605465594527" duration="17258000" />
+      <workItem from="1605535478767" duration="6062000" />
     </task>
     <servers />
   </component>
@@ -179,6 +171,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1605507857901">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1605507857901" />
     <state x="604" y="355" key="NewPhpFileDialog" timestamp="1605482915979">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
